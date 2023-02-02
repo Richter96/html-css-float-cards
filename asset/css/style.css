@@ -1,5 +1,64 @@
+
+/* region common */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root
+{
+ --fc-pink: #e53170;
+ --fc-tbackground: #0f0e17;
+ --fc-lightblu: #2fa6da;
+ --fc-grey:#b1b2b5;
+}
+
+
+body {
+    font-family: 'Fredoka', sans-serif;
+}
+/* endregion common */
+
+
+header h1 {
+    color: var(--fc-pink);
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.colums-team .col-t {
+    width: calc(100% / 3 - 2rem);
+    float: left;
+    margin: 1rem;
+    background-color: var(--fc-tbackground);
+    color: white;
+
+}
+
+p{
+    padding: 1rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* debug */
+.debug {
+    height: 100px;
+background-color: #e53170; 
+border: 1px solid #ff8906; 
 }
