@@ -23,20 +23,22 @@ body {
     display: table;
     clear: both;
 }
-
-/* endregion common */
-
-
 header h1 {
     color: var(--fc-pink);
     padding: 2rem;
     text-align: center;
 }
 
+/* endregion common */
+
+.descrip-team p {
+    padding: 1rem;
+    text-align: center;
+}
 
 .container {
     max-width: 1170px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .colums-team .col-t {
@@ -45,22 +47,17 @@ header h1 {
     margin: 1rem;
     background-color: var(--fc-tbackground);
     color: white;
-
 }
 
-.col-t img {
-    width: 30%;
-    float: left;
-    padding-right: 1rem;
-}
+
 
 .col-t {
     Box-shadow: 2px 3px 16px 3px #888888;
 }
-
-.descrip-team p {
-    padding: 1rem;
-    text-align: center;
+.col-t img {
+    width: 30%;
+    float: left;
+    padding-right: 1rem;
 }
 
 .col-t p {
@@ -73,11 +70,11 @@ header h1 {
 
 
 /* debug */
-.debug {
+/* .debug {
     height: 100px;
     background-color: #e53170;
     border: 1px solid #ff8906;
-}
+} */
 
 .app_footer .copy {
     background: rgba(119, 119, 119, 0.484);
@@ -85,5 +82,9 @@ header h1 {
     line-height: 40px;
     font-size: 0.7em;
     color: white;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+
 
 }
