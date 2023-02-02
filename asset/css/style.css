@@ -19,8 +19,8 @@ body {
 
 /* CLEARFIX */
 .clearfix::after {
-    content: "';
- display: table;
+    content: "";
+    display: table;
     clear: both;
 }
 
@@ -50,9 +50,8 @@ header h1 {
 
 .col-t img {
     width: 30%;
-    object-fit: cover;
     float: left;
-    padding-right: 1rem ;
+    padding-right: 1rem;
 }
 
 .col-t {
@@ -65,10 +64,10 @@ header h1 {
 }
 
 .col-t p {
-    padding-top: 0.5rem ;
+    padding-top: 0.5rem;
 }
 
-.email  {
+.email {
     color: var(--fc-lightblu);
 }
 
@@ -78,4 +77,13 @@ header h1 {
     height: 100px;
     background-color: #e53170;
     border: 1px solid #ff8906;
+}
+
+.app_footer .copy {
+    background: rgba(119, 119, 119, 0.484);
+    text-align: center;
+    line-height: 40px;
+    font-size: 0.7em;
+    color: white;
+
 }
