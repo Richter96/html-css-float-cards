@@ -55,9 +55,13 @@ header h1 {
     Box-shadow: 2px 3px 16px 3px #888888;
 }
 .col-t img {
-    width: 30%;
+    max-width: 100%;
     float: left;
     padding-right: 1rem;
+}
+
+.img    {
+    width: calc(100% / 3);
 }
 
 .col-t p {
@@ -85,6 +89,4 @@ header h1 {
     position: absolute;
     bottom: 20px;
     width: 100%;
-
-
 }
