@@ -1,4 +1,4 @@
-/* region common */
+/* #region common */
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +10,7 @@
     --fc-tbackground: #0f0e17;
     --fc-lightblu: #2fa6da;
     --fc-grey: #b1b2b5;
+    --fc-ligth: #ffffff;
 }
 
 
@@ -18,54 +19,58 @@ body {
 }
 
 /* CLEARFIX */
-.clearfix::after {
+.card::after, .raw::after {
     content: "";
     display: table;
     clear: both;
 }
-header h1 {
+
+h1 {
     color: var(--fc-pink);
     padding: 2rem;
     text-align: center;
 }
+/* #endregion common */
 
-/* endregion common */
 
 .descrip-team p {
     padding: 1rem;
     text-align: center;
 }
 
-.container {
+#app-header {
     max-width: 1170px;
     margin: 0 auto;
 }
 
-.colums-team .col-t {
-    width: calc(100% / 3 - 2rem);
-    float: left;
-    margin: 1rem;
-    background-color: var(--fc-tbackground);
-    color: white;
+#app-main {
+    max-width: 1170px;
+    margin: 0 auto;
 }
-
-
 
 .col-t {
+    width: calc(100% / 3 );
+    float: left;
+    padding: 1rem;
+}
+.card {
+    background-color: var(--fc-tbackground);
+    color: var(--fc-ligth);
     Box-shadow: 2px 3px 16px 3px #888888;
 }
-.col-t img {
-    max-width: 100%;
+img {
     float: left;
-    padding-right: 1rem;
-}
-
-.img    {
     width: calc(100% / 3);
 }
 
-.col-t p {
-    padding-top: 0.5rem;
+.details {
+    float:left;
+    margin-left: 1rem;
+    margin-top: 0.7rem;
+}
+
+.details p, h3{
+    padding: 0.25rem
 }
 
 .email {
@@ -85,7 +90,7 @@ header h1 {
     text-align: center;
     line-height: 40px;
     font-size: 0.7em;
-    color: white;
+    color: var(--fc-ligth);
     position: absolute;
     bottom: 20px;
     width: 100%;
